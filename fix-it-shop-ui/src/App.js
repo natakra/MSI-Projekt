@@ -3,6 +3,7 @@ import ProductDetail from "./products/detail/ProductDetail";
 import { Switch, Route } from "react-router-dom";
 import Landing from "./landing/Landing";
 import ProductList from "./products/ProductList";
+import LoginScreen from "./login/LoginScreen";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/" exact>
           <Landing />
+        </Route>
+        <Route path="/login" exact>
+          <LoginScreen />
         </Route>
       </Switch>
     </Template>

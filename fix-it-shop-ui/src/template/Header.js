@@ -33,7 +33,7 @@ function Header() {
             <ul className="navbar-nav me-auto mb-lg-0">
               <li className="nav-item">
                 <Link to="/products" className="nav-link" replace onClick={changeNav}>
-                  Explore
+                  Przeglądaj
                 </Link>
               </li>
             </ul>
@@ -59,12 +59,12 @@ function Header() {
                   aria-labelledby="userDropdown"
                 >
                   <li>
-                    <Link to="/" className="dropdown-item" onClick={changeNav}>
+                    <Link to="/login" className="dropdown-item" replace onClick={changeNav}>
                       Login
                     </Link>
                   </li>
                   <li>
-                    <Link to="/" className="dropdown-item" onClick={changeNav}>
+                    <Link to="/" className="dropdown-item" replace onClick={changeNav}>
                       Sign Up
                     </Link>
                   </li>
